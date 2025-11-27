@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BINI Gallery</title>
 
+
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -19,10 +24,10 @@
         <div class="container-fluid d-flex align-items-center">
 
             <a class="navbar-brand" href="#">
-                <img src="logo.png" width="100" height="100">
+                <img src="logo.png" width="150" height="150">
             </a>
 
-            <h2 class="text-light mb-0">Sweet Tooth MV Gallery</h2>
+            <img src="sweet tooth.png" width="180" height="100"> 
         </div>
     </nav>
 
@@ -31,13 +36,14 @@
         <div class="card bg-dark bg-opacity-25 shadow-lg border-0 p-4 my-4">
             <div class="row" id="content"></div>
         </div>
+    </div>
 
-        <script src="users.js"></script>
-        <script>
-            var content = document.getElementById("content");
+    <script src="users.js"></script>
+    <script>
+        var content = document.getElementById("content");
 
-            for (var i = 0; i < users.length; i++) {
-                content.innerHTML += `
+        for (var i = 0; i < users.length; i++) {
+            content.innerHTML += `
                     <div class="col-12 col-md-6">
                         <div class="card bg-dark shadow my-3 border-0">
                             <img src="`+ users[i].image + `" class="card-img-top">
@@ -49,26 +55,33 @@
                         </div>
                     </div>
                 `;
-            }
-        </script>
+        }
+    </script>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center my-4 text-white">
-                    <h6>
-                        Pictures from:
-                        <a href="https://bini.abs-cbn.com/" target="_blank">
-                            https://bini.abs-cbn.com/
-                        </a>
-                    </h6>
-                </div>
-            </div>
-        </div>
+    <div class="col-12 text-center my-4 text-white">
+        <h6>
+            Pictures from:
+            <a href="https://bini.abs-cbn.com/" target="_blank">
+                https://bini.abs-cbn.com/
+            </a>
+        </h6>
+    </div>
 
+    <div class="bottom-bar bg-dark d-flex justify-content-center align-items-center">
+        <a href="https://www.facebook.com/BINIph.official" target="_blank" class="text-white mx-3">
+            <i class="bi bi-facebook" style="font-size: 2rem;"></i>
+        </a>
+        <a href="https://www.instagram.com/bini_ph/?hl=en" target="_blank" class="text-white mx-3">
+            <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+        </a>
+        <a href="https://x.com/BINI_ph" target="_blank" class="text-white mx-3">
+            <i class="bi bi-twitter" style="font-size: 2rem;"></i>
+        </a>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
